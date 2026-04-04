@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: restore
+        run: dotnet restore
+
+      - name: build
+        run: dotnet build -c Release --no-restore
+
+      - name: upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MoonlightSuite
+          path: bin/Release/net8.0/MoonlightSuite.dll
