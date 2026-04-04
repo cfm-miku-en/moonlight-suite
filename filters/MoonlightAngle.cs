@@ -4,22 +4,22 @@ using OpenTabletDriver.Plugin.Attributes;
 using OpenTabletDriver.Plugin.Output;
 using OpenTabletDriver.Plugin.Tablet;
 
-[PluginName("moonlight angle")] // obtuse or acute
+[PluginName("moonlight angle")]
 public class MoonlightAngle : IPositionedPipelineElement<IDeviceReport>
 {
     private Vector2 _last;
 
-#pragma warning disable CS8618 // STOP HANDICAPPING THE ERROR CODES
+#pragma warning disable CS8618 
     public event Action<IDeviceReport> Emit;
 #pragma warning restore CS8618
 
-    [SliderProperty("correction strength", 0f, 1f), DefaultPropertyValue(0.2f)] // ERM 1+1 IS NOT 11, IT IS 2!!
+    [SliderProperty("correction strength", 0f, 1f), DefaultPropertyValue(0.2f)] 
     public float CorrectionStrength { get; set; } = 0.2f;
 
-    [SliderProperty("angle snap threshold (degrees)", 0f, 45f), DefaultPropertyValue(15f)] // ahh its 15 degrees outside it should be SNOWING!!
+    [SliderProperty("angle snap threshold (degrees)", 0f, 45f), DefaultPropertyValue(15f)] 
     public float AngleThreshold { get; set; } = 15f;
 
-    [BooleanProperty("snap to diagonals", "includes 45 degree angles in snap targets")] // shoot the target 45 degrees with a 45mm
+    [BooleanProperty("snap to diagonals", "includes 45 degree angles in snap targets")] 
     public bool SnapToDiagonals { get; set; } = true;
 
     [BooleanProperty("snap to cardinals only", "only snaps to horizontal and vertical")]

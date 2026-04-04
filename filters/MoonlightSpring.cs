@@ -5,7 +5,7 @@ using OpenTabletDriver.Plugin.Output;
 using OpenTabletDriver.Plugin.Tablet;
 using OpenTabletDriver.Plugin.Timing;
 
-[PluginName("moonlight spring")] // springy spring spring
+[PluginName("moonlight spring")]
 public class MoonlightSpring : AsyncPositionedPipelineElement<IDeviceReport>
 {
     private Vector2 _pos;

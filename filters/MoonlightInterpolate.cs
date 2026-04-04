@@ -6,7 +6,7 @@ using OpenTabletDriver.Plugin.Attributes;
 using OpenTabletDriver.Plugin.Output;
 using OpenTabletDriver.Plugin.Tablet;
 
-[PluginName("moonlight interpolate")] // interpolar bear
+[PluginName("moonlight interpolate")]
 public class MoonlightInterpolate : IPositionedPipelineElement<IDeviceReport>
 {
     private Queue<Vector2> _samples = new();

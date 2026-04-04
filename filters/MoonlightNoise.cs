@@ -5,7 +5,7 @@ using OpenTabletDriver.Plugin.Output;
 using OpenTabletDriver.Plugin.Tablet;
 
 [PluginName("moonlight noise")]
-public class MoonlightNoise : IPositionedPipelineElement<IDeviceReport>
+public class MoonlightNoise : IPositionedPipelineElement<IDeviceReport> 
 {
     private Vector2 _last;
 

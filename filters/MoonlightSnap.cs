@@ -12,8 +12,8 @@ public class MoonlightSnap : IPositionedPipelineElement<IDeviceReport>
 #pragma warning disable CS8618
     public event Action<IDeviceReport> Emit;
 #pragma warning restore CS8618
+    [SliderProperty("speed threshold", 1f, 200f), DefaultPropertyValue(20f)] 
 
-    [SliderProperty("speed threshold", 1f, 200f), DefaultPropertyValue(20f)] // OH MY GOD ISHOWSPEED W SPEED ISHOWSPEED HUIHASIUS
     public float SpeedThreshold { get; set; } = 20f;
 
     [SliderProperty("boost multiplier", 1f, 5f), DefaultPropertyValue(1.5f)]

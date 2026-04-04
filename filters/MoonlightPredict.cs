@@ -15,7 +15,7 @@ public class MoonlightPredict : IPositionedPipelineElement<IDeviceReport>
     public event Action<IDeviceReport> Emit;
 #pragma warning restore CS8618
 
-    [SliderProperty("prediction strength", 0f, 1f), DefaultPropertyValue(0.3f)] // strength under 0.3 = you are retarbed   strength over 0.3 = smart prediction simpsons
+    [SliderProperty("prediction strength", 0f, 1f), DefaultPropertyValue(0.3f)] 
     public float PredictionStrength { get; set; } = 0.3f;
 
     [SliderProperty("max prediction distance", 1f, 100f), DefaultPropertyValue(30f)]

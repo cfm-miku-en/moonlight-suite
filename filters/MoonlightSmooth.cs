@@ -12,10 +12,10 @@ public class MoonlightSmooth : IPositionedPipelineElement<IDeviceReport>
     public event Action<IDeviceReport> Emit;
 #pragma warning restore CS8618
 
-    [SliderProperty("strength", 0f, 0.98f), DefaultPropertyValue(0.5f)] // this is my property you may not buy it i own it and if you wanna buy it it is $150,000 on zillow
+    [SliderProperty("strength", 0f, 0.98f), DefaultPropertyValue(0.5f)] 
     public float Strength { get; set; } = 0.5f;
 
-    [BooleanProperty("damp low movement", "extra damping when moving slowly")] // damp move slow, slow move damp, damp move you, you move damp, damp move damp, you move you
+    [BooleanProperty("damp low movement", "extra damping when moving slowly")]
     public bool DampLowMovement { get; set; } = false;
 
     [SliderProperty("damp threshold", 0f, 20f), DefaultPropertyValue(5f)]
