@@ -5,7 +5,8 @@ GPL 3.0 License
 
 Credits:
 cfm-miku-en - developer+owner
-AbstractQBit - inspiration for moonlight spring
+
+AbstractQBit - inspiration for moonlight spring + sine mode in moonlight smooth
 
 
 FILTERS:
