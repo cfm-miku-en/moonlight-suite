@@ -10,9 +10,16 @@ AbstractQBit - inspiration for moonlight spring
 
 FILTERS:
 MoonlightSmooth - Smoothing
+
 MoonlightInterpolate - Interpolation, duh
+
 MoonlightSpring - springy spring spring
+
 MoonlightSnap - snapping (no not like snap to circle)
+
 MoonlightAngle - ANGLE
+
 MoonlightPredict - predict stuff
+
 MoonlightNoise - noisy ahh
+
