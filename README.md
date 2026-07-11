@@ -1,5 +1,4 @@
-# Please Read.
-I have been unable to maintain the Moonlight Suite for well over 2 months due to a flag on my github account. This also has resulted in my plugin being removed from OpenTabletDriver's repository. As of the time you are seeing this, It is back on OTD and my Account has been unflagged. :3
+7/10/2026 - I am not going to be active on most of my projects here since it appears nobody cares about my work, so why should I be working on things that'll never be used? until something changes and my projects stop being meaningless, I am taking a break from Moonlight Suite.
 # moonlight suite
 moonlight suite is a little hobby project that contains filters for fun, filters for smoothing, angle correction, and more!
 some filters MAY not work because moonlight is new, moonlight will improve overtime.
