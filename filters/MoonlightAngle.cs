@@ -9,17 +9,17 @@ public class MoonlightAngle : IPositionedPipelineElement<IDeviceReport>
 {
     private Vector2 _last;
 
-#pragma warning disable CS8618 
+#pragma warning disable CS8618
     public event Action<IDeviceReport> Emit;
 #pragma warning restore CS8618
 
-    [SliderProperty("correction strength", 0f, 1f), DefaultPropertyValue(0.2f)] 
+    [SliderProperty("correction strength", 0f, 1f), DefaultPropertyValue(0.2f)]
     public float CorrectionStrength { get; set; } = 0.2f;
 
-    [SliderProperty("angle snap threshold (degrees)", 0f, 45f), DefaultPropertyValue(15f)] 
+    [SliderProperty("angle snap threshold (degrees)", 0f, 45f), DefaultPropertyValue(15f)]
     public float AngleThreshold { get; set; } = 15f;
 
-    [BooleanProperty("snap to diagonals", "includes 45 degree angles in snap targets")] 
+    [BooleanProperty("snap to diagonals", "includes 45 degree angles in snap targets")]
     public bool SnapToDiagonals { get; set; } = true;
 
     [BooleanProperty("snap to cardinals only", "only snaps to horizontal and vertical")]
@@ -37,6 +37,12 @@ public class MoonlightAngle : IPositionedPipelineElement<IDeviceReport>
         Emit.Invoke(report);
     }
 
+    private static double AngleDiff(double a, double b)
+    {
+        double diff = Math.Abs(a - b) % 360.0;
+        return diff > 180.0 ? 360.0 - diff : diff;
+    }
+
     private Vector2 Filter(Vector2 input)
     {
         var delta = input - _last;
@@ -50,17 +56,17 @@ public class MoonlightAngle : IPositionedPipelineElement<IDeviceReport>
 
         double[] snapAngles;
         if (CardinalOnly)
-            snapAngles = new double[] { 0, 90, 180, -90, -180 };
+            snapAngles = new double[] { 0, 90, 180, -90 };
         else if (SnapToDiagonals)
-            snapAngles = new double[] { 0, 45, 90, 135, 180, -45, -90, -135, -180 };
+            snapAngles = new double[] { 0, 45, 90, 135, 180, -45, -90, -135 };
         else
-            snapAngles = new double[] { 0, 90, 180, -90, -180, 45, -45, 135, -135 };
+            snapAngles = new double[] { 0, 90, 180, -90 };
 
         double nearest = snapAngles[0];
-        double minDiff = Math.Abs(angle - snapAngles[0]);
+        double minDiff = AngleDiff(angle, snapAngles[0]);
         foreach (var snap in snapAngles)
         {
-            var diff = Math.Abs(angle - snap);
+            var diff = AngleDiff(angle, snap);
             if (diff < minDiff) { minDiff = diff; nearest = snap; }
         }
 

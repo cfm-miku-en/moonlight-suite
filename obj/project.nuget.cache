@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "DBFe9qaxll0=",
+  "success": true,
+  "projectFilePath": "/workspaces/moonlight-suite/MoonlightSuite.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/opentabletdriver.plugin/0.6.6.2/opentabletdriver.plugin.0.6.6.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/8.0.30/microsoft.netcore.app.ref.8.0.30.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.30/microsoft.aspnetcore.app.ref.8.0.30.nupkg.sha512"
+  ],
+  "logs": []
+}

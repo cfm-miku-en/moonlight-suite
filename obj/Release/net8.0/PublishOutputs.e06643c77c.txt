@@ -1,0 +1,5 @@
+/workspaces/moonlight-suite/bin/Release/net8.0/publish/MoonlightSuite.dll
+/workspaces/moonlight-suite/bin/Release/net8.0/publish/MoonlightSuite.deps.json
+/workspaces/moonlight-suite/bin/Release/net8.0/publish/MoonlightSuite.pdb
+/workspaces/moonlight-suite/bin/Release/net8.0/publish/Newtonsoft.Json.dll
+/workspaces/moonlight-suite/bin/Release/net8.0/publish/OpenTabletDriver.Plugin.dll

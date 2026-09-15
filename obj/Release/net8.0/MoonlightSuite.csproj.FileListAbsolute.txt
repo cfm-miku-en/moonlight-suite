@@ -1,0 +1,13 @@
+/workspaces/moonlight-suite/bin/Release/net8.0/MoonlightSuite.deps.json
+/workspaces/moonlight-suite/bin/Release/net8.0/MoonlightSuite.dll
+/workspaces/moonlight-suite/bin/Release/net8.0/MoonlightSuite.pdb
+/workspaces/moonlight-suite/obj/Release/net8.0/MoonlightSuite.csproj.AssemblyReference.cache
+/workspaces/moonlight-suite/obj/Release/net8.0/MoonlightSuite.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/moonlight-suite/obj/Release/net8.0/MoonlightSuite.AssemblyInfoInputs.cache
+/workspaces/moonlight-suite/obj/Release/net8.0/MoonlightSuite.AssemblyInfo.cs
+/workspaces/moonlight-suite/obj/Release/net8.0/MoonlightSuite.csproj.CoreCompileInputs.cache
+/workspaces/moonlight-suite/obj/Release/net8.0/MoonlightSuite.sourcelink.json
+/workspaces/moonlight-suite/obj/Release/net8.0/MoonlightSuite.dll
+/workspaces/moonlight-suite/obj/Release/net8.0/refint/MoonlightSuite.dll
+/workspaces/moonlight-suite/obj/Release/net8.0/MoonlightSuite.pdb
+/workspaces/moonlight-suite/obj/Release/net8.0/ref/MoonlightSuite.dll
