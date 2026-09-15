@@ -4,6 +4,8 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoonlightSuite", "MoonlightSuite.csproj", "{A9037791-28B0-551D-0C80-CD989B19E20C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoonlightSuite.Tests", "tests\MoonlightSuite.Tests\MoonlightSuite.Tests.csproj", "{6B2C4E91-3D5A-4F8B-9E17-2A0C5D8F1B34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{A9037791-28B0-551D-0C80-CD989B19E20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9037791-28B0-551D-0C80-CD989B19E20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9037791-28B0-551D-0C80-CD989B19E20C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2C4E91-3D5A-4F8B-9E17-2A0C5D8F1B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2C4E91-3D5A-4F8B-9E17-2A0C5D8F1B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2C4E91-3D5A-4F8B-9E17-2A0C5D8F1B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2C4E91-3D5A-4F8B-9E17-2A0C5D8F1B34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
